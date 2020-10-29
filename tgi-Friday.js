@@ -19,7 +19,7 @@ function lastDayIsFriday(initialYear, endYear) {
   } else {
 
     let severalYears = fridaysInSeveralYears()
-
+    return severalYears
     // console.log(severalYears)
     // return severalYears
   }
