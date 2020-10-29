@@ -40,8 +40,8 @@ function lastDayIsFriday(initialYear, endYear) {
       for (mes = 1; mes < 13; mes++) {
         //obtener ulttimo día de cada mes
         dateObjOfMonth = lastDay(initialYear+i, mes)
-        console.log(i);
-        console.log(initialYear+1);
+        // console.log(i);
+        // console.log(initialYear+i);
         // obtener numero del 0 al 6 q refleja días de domingo a lunes
         dayNum = dateObjOfMonth.getDay()
         //  si el numero es 5 es viernes y aumentar conteoo
@@ -55,7 +55,7 @@ function lastDayIsFriday(initialYear, endYear) {
     }
 
 
-    console.log(sum);
+    // console.log(sum);
     return sum
   }
 
