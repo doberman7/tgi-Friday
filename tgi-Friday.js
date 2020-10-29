@@ -21,54 +21,61 @@ function lastDayIsFriday(initialYear) {
     dateObjOfMonth = lastday(initialYear, mes)
     console.log(dateObjOfMonth);
     dayNum = dateObjOfMonth.getDay()
-  }
-
-  switch (dayNum) {
-    case 1:
-      // console.log(dateObjOfMonth);
-      dayNum = "Monday"
-      log(dayNum)
-
-      count++
-      break;
-    default:
-    case 2:
-      // console.log(dateObjOfMonth);
-      dayNum = "Tuesday"
-      log(dayNum)
-
-      count++
-      break;
-    case 3:
-      // console.log(dateObjOfMonth);
-      dayNum = "Wednesday"
-      log(dayNum)
-
-      count++
-      break;
-    case 4:
-      // console.log(dateObjOfMonth);
-      dayNum = "Thursday"
-      log(dayNum)
-
-      count++
-      break;
-    case 5:
-      // console.log(dateObjOfMonth);
+    log(dayNum)
+    if (dayNum == 5) {
       dayNum = "Friday"
-      log(dayNum)
       count++
-      break;
-    case 6:
-      // console.log(dateObjOfMonth);
-      dayNum = "Saturday"
-      log(dayNum)
-
-
-      count++
-      break;
-
+    }
   }
+
+
+
+
+  // switch (dayNum) {
+  //   case 1:
+  //     // console.log(dateObjOfMonth);
+  //     dayNum = "Monday"
+  //     log(dayNum)
+  //     break;
+  //   default:
+  //   case 2:
+  //     // console.log(dateObjOfMonth);
+  //     dayNum = "Tuesday"
+  //     log(dayNum)
+  //
+  //     break;
+  //   case 3:
+  //     // console.log(dateObjOfMonth);
+  //     dayNum = "Wednesday"
+  //     log(dayNum)
+  //
+  //     break;
+  //   case 4:
+  //     // console.log(dateObjOfMonth);
+  //     dayNum = "Thursday"
+  //     log(dayNum)
+  //
+  //     break;
+  //   case 5:
+  //     // console.log(dateObjOfMonth);
+  //     dayNum = "Friday"
+  //     log(dayNum)
+  //     count++
+  //     break;
+  //   case 6:
+  //     // console.log(dateObjOfMonth);
+  //     dayNum = "Saturday"
+  //     log(dayNum)
+  //   case 0:
+  //     // console.log(dateObjOfMonth);
+  //     dayNum = "Sunday"
+  //     log(dayNum)
+  //
+  //
+  //
+  //     break;
+  //
+  // }
 
 
 
