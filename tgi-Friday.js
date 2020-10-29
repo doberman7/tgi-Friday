@@ -10,13 +10,9 @@ let endYear = undefined
 
 function lastDayIsFriday(initialYear) {
 
-    let lastday = function(y, m) {
-      //getDay() -> 0 for Sunday, 1 for Monday, 2 for Tuesday, 3 for Wednesday, 4 for Thursday, 5 for Friday, 6 for Saturday.
-      let date = new Date(y, m , 0);
-      // log(date.getDay())
-      return date.getDay()
-    }
-    let dayNum = lastday(initialYear, 10)
+    let lastday = (y, m) =>new Date(y, m , 0).getDay()
+
+    let dayNum = lastday(initialYear, 11)
 
     switch (dayNum) {
       case 1:
@@ -40,6 +36,8 @@ function lastDayIsFriday(initialYear) {
         break;
 
     }
+
+
 
     console.log(dayNum);
 }
