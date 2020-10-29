@@ -1,8 +1,10 @@
 log = console.log
 //return the number of times a month ends with a Friday.
 
-let initialYear = 2017 //2017 - Expected: 2, instead got: 1
-// let endYear = undefined
+// let initialYear = 2017 //2017 - Expected: 2, instead got: 1
+
+let initialYear = 1901 //1901 and 2000 - Expected: 171
+let endYear = 2000 //1901 and 2000 - Expected: 171
 
 
 
@@ -13,12 +15,12 @@ function lastDayIsFriday(initialYear, endYear) {
   let dateObjOfMonth = null
 
   if (typeof endYear == "undefined") {
-    onlyOneYear()
+    fridaysInAyear()
   } else {
 
   }
 
-  function onlyOneYear() {
+  function fridaysInAyear() {
     //funcion q obtiene el ulttimo dia en un objDate
     let lastday = (y, m) => {
       date = new Date(y, m, 0)
