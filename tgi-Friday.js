@@ -1,7 +1,7 @@
 log = console.log
 //return the number of times a month ends with a Friday.
 
-let initialYear = 2020// it ("returns 1 when 1991"
+let initialYear = 1991// it ("returns 1 when 1991"
 let endYear = undefined
 
 
@@ -11,10 +11,10 @@ let endYear = undefined
 function lastDayIsFriday(initialYear) {
     let count = 0
     let lastday = (y, m) =>new Date(y, m , 0).getDay()
-
-    let dayNum = lastday(initialYear, 10)
+    let dayNum = null
     for ( mes = 1; mes < 13; mes++) {
-      console.log(mes);
+       dayNum = lastday(initialYear, mes)
+      // console.log(mes);
     }
 
     switch (dayNum) {
@@ -48,7 +48,7 @@ function lastDayIsFriday(initialYear) {
 
 
 
-    console.log(dayNum);
+    console.log(count);
 }
 
 
