@@ -17,8 +17,12 @@ function lastDayIsFriday(initialYear, endYear) {
   if (typeof endYear == "undefined") {
     fridaysInAyear()
   } else {
-
-    console.log(initialYear);
+    //determinar años entre initialYear y endYear
+    let years = endYear - initialYear
+    //correr fridaysInAyear ese numero
+    for ( año = 0; año < years; año++) {
+      log(año+1)
+    }
   }
 
   function fridaysInAyear() {
