@@ -18,6 +18,7 @@ function lastDayIsFriday(initialYear, endYear) {
     fridaysInAyear()
   } else {
 
+    console.log(initialYear);
   }
 
   function fridaysInAyear() {
@@ -49,4 +50,4 @@ function lastDayIsFriday(initialYear, endYear) {
 }
 
 
-lastDayIsFriday(initialYear)
+lastDayIsFriday(initialYear,endYear)
