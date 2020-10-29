@@ -13,6 +13,9 @@ function lastDayIsFriday(initialYear) {
     let lastday = (y, m) =>new Date(y, m , 0).getDay()
 
     let dayNum = lastday(initialYear, 10)
+    for ( mes = 1; mes < 13; mes++) {
+      console.log(mes);
+    }
 
     switch (dayNum) {
       case 1:
