@@ -1,7 +1,7 @@
 log = console.log
 //return the number of times a month ends with a Friday.
 
-let initialYear = 2017 // Not the correct number of Fridays in 2017 - Expected: 2, instead got: 1
+let initialYear = 2017 //2017 - Expected: 2, instead got: 1
 let endYear = undefined
 
 
@@ -19,67 +19,15 @@ function lastDayIsFriday(initialYear) {
 
   for (mes = 1; mes < 13; mes++) {
     dateObjOfMonth = lastday(initialYear, mes)
-    console.log(dateObjOfMonth);
+    // console.log(dateObjOfMonth);
     dayNum = dateObjOfMonth.getDay()
-    log(dayNum)
+    // log(dayNum)
     if (dayNum == 5) {
       dayNum = "Friday"
       count++
     }
   }
 
-
-
-
-  // switch (dayNum) {
-  //   case 1:
-  //     // console.log(dateObjOfMonth);
-  //     dayNum = "Monday"
-  //     log(dayNum)
-  //     break;
-  //   default:
-  //   case 2:
-  //     // console.log(dateObjOfMonth);
-  //     dayNum = "Tuesday"
-  //     log(dayNum)
-  //
-  //     break;
-  //   case 3:
-  //     // console.log(dateObjOfMonth);
-  //     dayNum = "Wednesday"
-  //     log(dayNum)
-  //
-  //     break;
-  //   case 4:
-  //     // console.log(dateObjOfMonth);
-  //     dayNum = "Thursday"
-  //     log(dayNum)
-  //
-  //     break;
-  //   case 5:
-  //     // console.log(dateObjOfMonth);
-  //     dayNum = "Friday"
-  //     log(dayNum)
-  //     count++
-  //     break;
-  //   case 6:
-  //     // console.log(dateObjOfMonth);
-  //     dayNum = "Saturday"
-  //     log(dayNum)
-  //   case 0:
-  //     // console.log(dateObjOfMonth);
-  //     dayNum = "Sunday"
-  //     log(dayNum)
-  //
-  //
-  //
-  //     break;
-  //
-  // }
-
-
-
-  console.log("count", count)
   return count
 }
 
