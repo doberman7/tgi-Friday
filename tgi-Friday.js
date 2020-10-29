@@ -11,23 +11,24 @@ function lastDayIsFriday(initialYear) {
   let date = null
   let dayNum = null
   let dateObjOfMonth = null
-  //funcionio q obtiene el ulttimo dia en un objDate
+  //funcion q obtiene el ulttimo dia en un objDate
   let lastday = (y, m) => {
     date = new Date(y, m, 0)
     return date
   }
-
+//iterara del 1 al 12
   for (mes = 1; mes < 13; mes++) {
+    //obtener ulttimo día de cada mes
     dateObjOfMonth = lastday(initialYear, mes)
-    // console.log(dateObjOfMonth);
+    // obtener numero del 0 al 6 q refleja días de domingo a lunes
     dayNum = dateObjOfMonth.getDay()
-    // log(dayNum)
+    //  si el numero es 5 es viernes y aumentar conteoo
     if (dayNum == 5) {
       dayNum = "Friday"
       count++
     }
   }
-
+  console.log(count)
   return count
 }
 
