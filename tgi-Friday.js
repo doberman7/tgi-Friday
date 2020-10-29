@@ -9,23 +9,33 @@ let endYear = 2000 //1901 and 2000 - Expected: 171
 
 
 function lastDayIsFriday(initialYear, endYear) {
-  let count = 0
   let date = null
   let dayNum = null
   let dateObjOfMonth = null
 
   if (typeof endYear == "undefined") {
-    fridaysInAyear()
+    let inOnYear = fridaysInAyear()
+    console.log(inOnYear);
+    return inOnYear
   } else {
+    let sum = 0
+
     //determinar años entre initialYear y endYear
     let years = endYear - initialYear
     //correr fridaysInAyear ese numero
-    for ( año = 0; año < years; año++) {
-      log(año+1)
+    for ( i = 1; i <= years; i++) {
+      // console.log(i==sum)
+      sum = fridaysInAyear()
     }
+    console.log(sum)
+    return sum
   }
 
+
+
   function fridaysInAyear() {
+    let count = 0
+
     //funcion q obtiene el ulttimo dia en un objDate
     let lastday = (y, m) => {
       date = new Date(y, m, 0)
@@ -42,16 +52,13 @@ function lastDayIsFriday(initialYear, endYear) {
         dayNum = "Friday"
         count++
       }
+
     }
+    return count
+
   }
 
-
-
-
-
-  console.log(count)
-  return count
 }
 
 
-lastDayIsFriday(initialYear,endYear)
+lastDayIsFriday(initialYear)
